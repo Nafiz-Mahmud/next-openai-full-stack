@@ -1,0 +1,80 @@
+.home {
+  h2 {
+    color: red;
+    text-align: center;
+    padding-top: 1rem;
+  }
+  img {
+    height: 30vh;
+    width: 40vh;
+  }
+  nav {
+    text-align: center;
+    min-height: 10vh;
+    padding: 1rem;
+    background-color: rgb(35, 35, 35);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h1 {
+      font-size: 1.8rem;
+    }
+  }
+  .form {
+    min-height: 30vh;
+    background-color: purple;
+    padding: 2rem;
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 3vh;
+      input {
+        border: none;
+        outline: none;
+        padding: 0.5rem;
+        width: 50vw;
+        background-color: purple;
+        border-bottom: 0.1rem solid white;
+        color: white;
+        &:focus {
+          border-bottom: 0.1rem solid skyblue;
+          color: white;
+        }
+        &::placeholder {
+          color: white;
+          font-weight: bold;
+        }
+      }
+      select {
+        padding: 0.3rem;
+        border: none;
+        outline: none;
+        cursor: pointer;
+      }
+      button {
+        cursor: pointer;
+        padding: 0.5rem 1rem;
+        border: 0.1rem solid rgb(97, 255, 97);
+        background-color: rgba(144, 238, 144, 0.8);
+        &:hover {
+          background-color: rgb(97, 255, 97);
+        }
+      }
+    }
+  }
+}
+.image {
+  // background-color: coral;
+  padding: 0.2rem;
+  height: 20rem;
+  width: 25rem;
+  margin: 3rem auto;
+  box-shadow: 0.2rem 0.2rem 0.5rem rgb(135, 135, 135);
+  img {
+    height: 100%;
+    width: 100%;
+    // object-position: center;
+  }
+}
