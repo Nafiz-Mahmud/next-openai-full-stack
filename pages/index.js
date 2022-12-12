@@ -15,10 +15,13 @@ export default function Home() {
     e.preventDefault();
     setButtonText("Generating...");
     try {
-      const { data } = await axios.post("http://localhost:3000/api/generate", {
-        prompt,
-        size,
-      });
+      const { data } = await axios.post(
+        "https://alpha-image.vercel.app/api/generate",
+        {
+          prompt,
+          size,
+        }
+      );
       // console.log(prompt, size);
       // console.log(data);
       setImage(data.data);
